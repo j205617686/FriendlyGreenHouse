@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>test.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.example.DBtest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>State</servlet-name>
+    <servlet-class>com.example.StateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>State</servlet-name>
+    <url-pattern>/stateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Encyclopedia</servlet-name>
+    <servlet-class>com.example.EncyclopediaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Encyclopedia</servlet-name>
+    <url-pattern>/encyclopediaServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>getSpecies</servlet-name>
+    <servlet-class>com.example.GetSpecies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getSpecies</servlet-name>
+    <url-pattern>/speciesSet/getSpecies</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>setSpecies</servlet-name>
+    <servlet-class>com.example.SetSpecies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setSpecies</servlet-name>
+    <url-pattern>/speciesSet/setSpecies</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>setImmediate</servlet-name>
+    <servlet-class>com.example.setImmediateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setImmediate</servlet-name>
+    <url-pattern>/immediate/setImmediate</url-pattern>
+  </servlet-mapping>
+  
+   
+   <servlet>
+    <servlet-name>getImmediate</servlet-name>
+    <servlet-class>com.example.getImmediateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getImmediate</servlet-name>
+    <url-pattern>/immediate/getImmediate</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>VerificateAccount</servlet-name>
+    <servlet-class>com.example.VerificateAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerificateAccount</servlet-name>
+    <url-pattern>/loginValidation/VerificateAccount</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>setWisdom</servlet-name>
+    <servlet-class>com.example.setWisdomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setWisdom</servlet-name>
+    <url-pattern>/automatic/setWisdom</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>setCustom</servlet-name>
+    <servlet-class>com.example.setCustomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setCustom</servlet-name>
+    <url-pattern>/automatic/setCustom</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>getAutomaticState</servlet-name>
+    <servlet-class>com.example.getAutomaticStateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAutomaticState</servlet-name>
+    <url-pattern>/automatic/getAutomaticState</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
